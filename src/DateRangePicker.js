@@ -1,6 +1,8 @@
 import React from "react";
 import DatePicker from "./index.js";
 
+// added some comment for test
+
 class DateRangePicker extends React.Component {
   constructor(props) {
     super(props);
@@ -53,7 +55,7 @@ class DateRangePicker extends React.Component {
           preSelected={preSelectedStart}
           {...rest}
         />
-        <div>{"->"}</div>
+        
         {!disableFromUnix && <div>{placeholderEnd}</div>}
         {!!disableFromUnix && (
           <DatePicker
